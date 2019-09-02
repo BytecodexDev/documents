@@ -1,0 +1,11 @@
+ROBLOX SERVER SIDE EXECUTION
+
+
+--Server Side - Replicating your client to the server.
+--Server Side Execution can be ran by a RemoteEvent. It can be done by "serverExecution" with a Executor such as: Synapse X.
+-- serverExecution is a type of RemoteEvent which you will need is an executor. This executor will be your client executor.
+--Your client executor will turn into server executor because of the event that has the "serverExecution", but with this
+--Server Execution you will need your loadstring, this loadstring would by your module, this module must have a require function.
+--This require module will be executed by :FireServer, the RemoteEvent will be fired and do its function, replicating your client
+--to the server, but Server Side Execution has limitations, you need a Server Side Converter to make it as a require module.
+--Credits: My brain.
