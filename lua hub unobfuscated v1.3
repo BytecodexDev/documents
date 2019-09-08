@@ -21,9 +21,6 @@ local Hub4 = library:CreateWindow({
 local Misc = library:CreateWindow({
 	text = "Miscellaneous"
 })
-local credits = library:CreateWindow({text='Cool People :)'})
-credits:AddLabel("Credits\nSayato: Obfuscating the script\nwally: UI\nVarious Game Exploiters\nBytecodex#2687\nYou: For trying out the script :)")
-
 
 Hub:AddButton("Speed City", function()
 	loadstring(game:HttpGet("http://207.148.81.217:8989/_s/csmit195/SpeedCity/latest.txt"))()
@@ -149,7 +146,7 @@ Misc:AddButton("Delete all GUIS", function()
 	Hub2.frame:Destroy()
 	Hub3.frame:Destroy()
 	MagnetSim.frame:Destroy()
-	credits.frame:Destroy()
+	Hub4.frame:Destroy()
 	Misc.frame:Destroy()
 end)
 
