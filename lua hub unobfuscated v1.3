@@ -1,0 +1,161 @@
+--Lua Hub by Bytecodex, v1.3
+
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/7Z6TzFnv", true))()
+local Hub =  library:CreateWindow({
+  text = "Lua Hub Page 1"
+})
+
+local Hub2 = library:CreateWindow({
+	text = "Lua Hub Page 2"
+})
+
+local Hub3 = library:CreateWindow({
+	text = "Lua Hub Page 3"
+})
+local MagnetSim = library:CreateWindow({
+	text = "Magnet Simulator Scripts"
+})
+local Hub4 = library:CreateWindow({
+	text = "Lua Hub Page 4"
+})
+local Misc = library:CreateWindow({
+	text = "Miscellaneous"
+})
+local credits = library:CreateWindow({text='Cool People :)'})
+credits:AddLabel("Credits\nSayato: Obfuscating the script\nwally: UI\nVarious Game Exploiters\nBytecodex#2687\nYou: For trying out the script :)")
+
+
+Hub:AddButton("Speed City", function()
+	loadstring(game:HttpGet("http://207.148.81.217:8989/_s/csmit195/SpeedCity/latest.txt"))()
+end)
+
+
+Hub:AddButton("Power Simulator", function()
+	loadstring(game:HttpGet("http://207.148.81.217:8989/_s/csmit195/SuperheroSimulatorBeta/latest.txt", true))()
+end)
+
+
+Hub:AddButton("Texting Simulator", function()
+	spawn(loadstring(game:HttpGet("https://pastebin.com/raw/dqLP93cZ")))
+end)
+
+
+Hub:AddButton("Magnet Simulator", function()
+	loadstring(game:HttpGet("http://207.148.81.217:8989/_s/csmit195/MagnetSimulator/latest.txt"))()
+end)
+
+
+Hub2:AddButton("Camera Simulator", function()
+	loadstring(game:HttpGet("http://207.148.81.217:8989/_s/csmit195/CameraSimulator/latest.txt"))()
+end)
+
+
+Hub2:AddButton("Pet-Ranch Simulator", function()
+	spawn(loadstring(game:HttpGet("https://pastebin.com/raw/y4GLqGWN")))
+end)
+
+
+Hub2:AddButton("Cypher X", function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/twBxiUzz'),true))()
+end)
+
+Hub2:AddButton("Prison Fucker", function()
+	loadstring(game:HttpGet(('https://gist.githubusercontent.com/Synthionized/0acfd80c4abde3e7f6764521863f776b/raw/a5be11bb7a1b91ce88f0fa7ebc72714c4e65c488/Prison%2520Fucker%2520Auto%2520Updater'),true))()
+end)
+
+Hub2:AddButton("Potato Hub", function()
+	loadstring(game:HttpGet(('https://potato-hub.000webhostapp.com/PotatoHub_Auto-Update.lua'),true))()
+end)
+
+Hub2:AddButton("Another Magnet Sim", function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/1aAdG0UC'),true))()
+end)
+
+Hub3:AddButton("Lumber Tycoon", function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/wWxsHtxJ'),true))()
+end)
+
+Hub3:AddLabel("Walkspeed")
+
+Hub3:AddBox("Speed", function(object, focus)
+if focus then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(object.Text)or 16
+end
+end)
+
+Hub3:AddButton("Chat Bypass", function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/BytecodexDev/documents/master/ChatBypassV1'), true))()
+end)
+
+Hub3:AddButton("Phantom Forces", function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/p6a6e3Y7'), true))()
+end)
+
+Hub3:AddButton("Bad Business", function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/0X0ecbmH'), true))()
+end)
+
+MagnetSim:AddButton("Remove Notifications", function()
+	local plr = game:GetService("Players").LocalPlayer
+local screengui = plr.PlayerGui.GameHUD
+screengui.EggHandler.Disabled = true
+screengui.Notifications.Handler.Disabled = true
+screengui.FullBackpack.Handler.Disabled = true
+end)
+
+MagnetSim:AddButton("Auto Coins", function()
+	local r = game:GetService('ReplicatedStorage').Events.MagnetEvents['requestGrab']
+local rs = game:GetService('RunService').RenderStepped
+
+tool = "Cosmo Magnet"
+while rs:wait() do
+for i = 1,10 do
+r:FireServer("1100000", game.ReplicatedStorage.Tools[tool])
+end
+end
+
+end)
+
+MagnetSim:AddButton("Make pets shiny", function()
+	_G.shiny = true
+local Shinys = {"Three-Headed Demon",   "Mad Demon",   "Fallen Bird",   "Demonic Bird",   "Cat Demon",   "Golden Dominus",   "Space Dominus",   "Flame Dominus",   "Frost Dominus",   "Spirit Dominus",   "Super Bear",   "Bat Bear",   "Flashy Bear",   "Storm Bear",   "Captain Bear",   "Cursed Wolf",   "Angel Wolf",   "Sanic",   "Ogre",   "Nyan Cat",   "Doge",   "MLG Bear",   "Rich Bear",   "Noob",   "Fancy Bear",   "Ice Wolf",   "Ghost Wolf",   "Galaxy Wolf",   "Galaxy Bear",   "Spirit Bear",   "Moon Bear",   "Crystal Fox",   "Magnetite Wolf",   "Winged Overseer",   "Overseer Wolf",   "Wizard Overseer",   "Three-Headed Overseer",   "Overseer Overlord",   "Praefectus Overseer", "Lava Wolf", "Magma Gentleman", "Three-Headed Magma Wolf", "Hooded Fire Lord", "Lord of the Magma", "Gold Tycoonist", "Sir Rich McMeowington", "Bling", "Sir Rich McMoneyston", "Rich Blower","Goofbot", "Toastbot", "Coolbot", "Bucketoid", "Beatbox Robot", "Spring, the Earth Dragon", "Fafnir, the Fire Dragon", "Gandalf, the Wise Dragon", "Emeraldwrath Dragon", "Rubywrath Dragon", "Aer Draco", "Runic Dragon"}
+while _G.shiny do
+wait(0.1)
+for i = 1,#Shinys do
+wait()
+game.ReplicatedStorage.ShinyEvents.requestMakeShiny:FireServer(Shinys[i])
+end
+end
+
+end)
+
+Hub3:AddButton("Mr.Spy v2", function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/BytecodexDev/documents/master/oldremotespy'), true))()
+end)
+
+Hub3:AddButton("Fantastic Frontier", function()
+	loadstring(game:HttpGet(('https://pastebin.com/YybF6SFh'),true))()
+end)
+
+
+Hub3:AddButton("Lua U  Remote Spy", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/superdude914/scripts/master/remotespy.lua", true))()
+end)
+
+
+
+Misc:AddButton("Delete all GUIS", function()
+	Hub.frame:Destroy()
+	Hub2.frame:Destroy()
+	Hub3.frame:Destroy()
+	MagnetSim.frame:Destroy()
+	credits.frame:Destroy()
+	Misc.frame:Destroy()
+end)
+
+Hub4:AddBox("TP To Player", function(object, focus)
+	local tp = object.Text
+	local plr = game.Players.LocalPlayer.Character
+	local target = game.Workspace:FindFirstChild(tp)
+	plr.HumanoidRootPart.CFrame = target.HumanoidRootPart.CFrame*CFrame.new(0,2,0)
+end)
