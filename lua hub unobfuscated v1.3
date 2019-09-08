@@ -22,7 +22,6 @@ local Hub4 = library:CreateWindow({
 local Misc = library:CreateWindow({
 	text = "Miscellaneous"
 })
-
 Hub:AddButton("Speed City", function()
 	loadstring(game:HttpGet("http://207.148.81.217:8989/_s/csmit195/SpeedCity/latest.txt"))()
 end)
@@ -85,14 +84,6 @@ Hub3:AddButton("Chat Bypass", function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/BytecodexDev/documents/master/ChatBypassV1'), true))()
 end)
 
-Hub3:AddButton("Phantom Forces", function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/p6a6e3Y7'), true))()
-end)
-
-Hub3:AddButton("Bad Business", function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/0X0ecbmH'), true))()
-end)
-
 MagnetSim:AddButton("Remove Notifications", function()
 	local plr = game:GetService("Players").LocalPlayer
 local screengui = plr.PlayerGui.GameHUD
@@ -129,12 +120,12 @@ end)
 
 
 Hub3:AddButton("Fantastic Frontier", function()
-	loadstring(game:HttpGet(('https://pastebin.com/YybF6SFh'),true))()
+	loadstring(game:HttpGet(('https://pastebin.com/YybF6SFh'), true))()
 end)
 
 
 Hub3:AddButton("Lua U  Remote Spy", function()
-	loadstring(game:HttpGet(("https://raw.githubusercontent.com/superdude914/scripts/master/remotespy.lua"), true))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/0M2BLd7f"))()
 end)
 
 
@@ -156,7 +147,7 @@ Hub4:AddBox("TP To Player", function(object, focus)
 end)
 
 Hub4:AddButton("Infinite Yield", function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'), true))()
 end)
 
 Hub4:AddButton("Shattervast", function()
@@ -164,6 +155,25 @@ Hub4:AddButton("Shattervast", function()
 end)
 
 Hub4:AddButton("Revis Admin",function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/BytecodexDev/documents/master/revis.lua'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/BytecodexDev/documents/master/revis.lua'), true))()
 end)
 
+Hub4:AddButton("Chat Logger", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/stggPUBM", true))()
+end)
+
+Hub4:AddBox("Force Chat w/client sided bypass", function(object)
+	Plr = game:service("Players").LocalPlayer
+game:service("Chat"):Chat(Plr.Character.Head, object.text , Enum.ChatColor.Red)
+Plr.Chatted:connect(function(Msg)
+game:service("Chat"):Chat(Plr.Character.Head, Msg, Enum.ChatColor.Blue)
+end)
+end)
+
+Hub4:AddLabel("[]ALL CREDITS GOES TO:")
+Hub4:AddLabel("[:]Various Exploit Devs")
+Hub4:AddLabel("[!]More scripts coming soon :)")
+Hub4:AddLabel("[:]Bytecodex#2687 < discord")
+Hub4:AddButton("Click for Discord Server", function()
+	setclipboard("discord.gg/Ej9vZ6F")
+end)
